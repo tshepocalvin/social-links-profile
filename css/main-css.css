@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/static/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: 100 900; /* Inter supports multiple weights */
+  font-style: normal italic; /* Variable font can support slant or italic */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Mobile & Base styles */
+
+
+.card{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+
+    background-color: hsl(0, 0%, 12%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.card .profile-image{
+    border-radius: 50%;
+    width: 6rem;
+    margin-bottom: 10px;
+}
+
+.card h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card address{
+    color: hsl(75, 94%, 57%);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.card .profile-quote{
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+
+.card .social-links{
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px 0px;
+    background-color: hsl(0, 0%, 20%);
+    font-weight: 600;
+}
+
+.card .social-links:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+}
+
+footer a:visited, a:link{
+    color: hsl(75, 94%, 57%);
+}
+footer{
+    margin-bottom: 10px;
+}
+
+@media (min-width: 769px) {
+    .card{
+        width: 30%
+    }
+}
