@@ -76,7 +76,7 @@ body {
     color: black;
 }
 
-footer a:visited, a:link{
+footer a:visited, footer a:link{
     color: hsl(75, 94%, 57%);
 }
 footer{
